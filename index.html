@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Creating and Inserting DOM Elements</title>
-  </head>
-  <script type="application/javascript">
-  </script>
-  <body>
-    <main id="main"></main>
-    <script type="text/javascript" src="index.js"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation Lab</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 20px;
+    }
+    #main {
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 5px; /* Added rounded corners */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #27647B;
+      color: white;
+      border: none;
+      border-radius: 5px; /* Rounded corners for buttons */
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3A8BB2; /* Lighter blue on hover */
+    }
+    ul {
+      margin-top: 10px;
+      padding: 0;
+      list-style-type: none; /* Remove default bullets */
+    }
+    li {
+      padding: 5px;
+      background-color: #e7f1f8; /* Light background for list items */
+      margin: 5px 0; /* Space between items */
+      border-radius: 3px; /* Rounded corners for list items */
+    }
+  </style>
+</head>
+<body>
+  <main id="main">
+    <h1>Welcome to the DOM Manipulation Lab</h1>
+    <p>Let's dynamically add elements to this page using JavaScript!</p>
+    <div id="itemListContainer">
+      <h2>My List</h2>
+      <ul id="myList"></ul>
+    </div>
+    <input type="text" id="itemInput" placeholder="Add a new item" />
+    <button id="addButton">Add Item</button>
+  </main>
+
+  <script src="index.js"></script>
+</body>
 </html>
